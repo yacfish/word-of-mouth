@@ -2,7 +2,7 @@
 
 City-scale event pages with push notifications. No chat. No group cap.
 
-> Status: spec written, development starting. See [SPEC.md](SPEC.md) for the full product spec.
+> Status: server skeleton and data model in progress. See [SPEC.md](SPEC.md) for the full product spec.
 
 ## Why
 
@@ -15,10 +15,22 @@ Local event groups (concerts, shows, meetups) die in WhatsApp/Signal: they hit m
 
 ## Stack
 
-- Server: Node (or Go) — TBD by the dev bot
-- DB: SQLite (default) or Postgres
-- Push: Web Push API (free, no third-party relay)
-- Client: PWA (manifest + service worker), no app store
+Locked for this repo:
+
+- Server: Node.js 22 (Express). No native addons.
+- DB: SQLite via `node:sqlite`, file at `data/notify-pages.sqlite`.
+- Push: Web Push API (free, no third-party relay) — not wired yet.
+- Client: PWA (manifest + service worker), no app store — not wired yet.
+
+## Develop
+
+```bash
+cp .env.example .env
+npm install
+npm start
+```
+
+`GET /health` returns the migrated tables. Page CRUD is next.
 
 ## Self-hosting
 
