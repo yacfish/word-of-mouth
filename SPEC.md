@@ -1,4 +1,4 @@
-# notify-pages
+# Word of Mouth
 
 Free, open-source PWA for city-scale event pages. No chat, no group member cap.
 

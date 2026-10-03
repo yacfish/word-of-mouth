@@ -1,7 +1,7 @@
 # Competitor's research note
 
 Date: 3 October 2026
-Project: notify-pages
+Project: Word of Mouth
 
 ## Conclusion
 

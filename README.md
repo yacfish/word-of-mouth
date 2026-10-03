@@ -1,4 +1,4 @@
-# notify-pages
+# Word of Mouth
 
 City-scale event pages with push notifications. No chat. No group cap.
 
@@ -6,7 +6,7 @@ City-scale event pages with push notifications. No chat. No group cap.
 
 ## Why
 
-Local event groups (concerts, shows, meetups) die in WhatsApp/Signal: they hit member caps, get muted, and become spammy. notify-pages replaces the group with a **public page + private delivery pipe**.
+Local event groups (concerts, shows, meetups) die in WhatsApp/Signal: they hit member caps, get muted, and become spammy. Word of Mouth replaces the group with a **public page + private delivery pipe**.
 
 - Anyone can create a page and share its URL anywhere (flyer, Instagram, door).
 - Anyone can subscribe with one OAuth tap.
