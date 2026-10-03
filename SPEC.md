@@ -20,8 +20,8 @@ Free, open-source PWA for city-scale event pages. No chat, no group member cap.
 
 ## Tech stack
 
-- Small Node or Go server (pick one and stick with it)
-- SQLite or Postgres
+- Node.js 22, TypeScript, Hono on @hono/node-server
+- SQLite via node:sqlite
 - Web Push (web-push library)
 - PWA manifest + service worker
 - Self-hostable on a cheap VPS

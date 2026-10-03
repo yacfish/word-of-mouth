@@ -15,10 +15,12 @@ Local event groups (concerts, shows, meetups) die in WhatsApp/Signal: they hit m
 
 ## Stack
 
-- Server: Node (or Go) — TBD by the dev bot
-- DB: SQLite (default) or Postgres
+- Server: Node.js 22, TypeScript, Hono
+- DB: SQLite via node:sqlite
 - Push: Web Push API (free, no third-party relay)
 - Client: PWA (manifest + service worker), no app store
+
+Step 1 is the server skeleton and the schema, and the rest of the build order is not built yet.
 
 ## Self-hosting
 
