@@ -62,6 +62,7 @@ export function applySchema(db: DatabaseSync): void {
       mode TEXT NOT NULL CHECK (mode IN ('instant', 'daily', 'mute')),
       publisher_ids TEXT,
       created_at TEXT NOT NULL,
+      last_digest_at TEXT,
       UNIQUE (user_id, page_id)
     );
 
@@ -73,5 +74,18 @@ export function applySchema(db: DatabaseSync): void {
       auth TEXT NOT NULL,
       created_at TEXT NOT NULL
     );
+
+    CREATE TABLE IF NOT EXISTS publish_requests (
+      page_id INTEGER NOT NULL REFERENCES pages(id),
+      user_id INTEGER NOT NULL REFERENCES users(id),
+      status TEXT NOT NULL CHECK (status IN ('pending', 'approved', 'rejected')),
+      created_at TEXT NOT NULL,
+      PRIMARY KEY (page_id, user_id)
+    );
   `);
+
+  const columns = db.prepare('PRAGMA table_info(subscriptions)').all() as Array<{ name: string }>;
+  if (!columns.some((column) => column.name === 'last_digest_at')) {
+    db.exec('ALTER TABLE subscriptions ADD COLUMN last_digest_at TEXT');
+  }
 }
