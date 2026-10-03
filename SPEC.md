@@ -1,5 +1,7 @@
 # Word of Mouth
 
+Prototype status: the prototype covers the build order except Apple sign-in.
+
 Free, open-source PWA for city-scale event pages. No chat, no group member cap.
 
 ## Product spec

@@ -1,0 +1,12 @@
+{
+  "name": "Word of Mouth",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -20,7 +20,7 @@ test('schema, integrity, and health', async () => {
       .all() as Array<{ name: string }>;
     assert.deepEqual(
       tables.map((row) => row.name),
-      ['devices', 'pages', 'posts', 'publishers', 'subscriptions', 'users'],
+      ['devices', 'pages', 'posts', 'publish_requests', 'publishers', 'subscriptions', 'users'],
     );
 
     const now = '2026-10-03T00:00:00.000Z';

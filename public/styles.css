@@ -1,0 +1,64 @@
+body {
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem;
+  max-width: 38rem;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.45;
+  color: #1c1917;
+  background: #fafaf9;
+}
+
+a { color: #1d4ed8; }
+
+h1 { font-size: 1.6rem; line-height: 1.2; }
+
+h2 { font-size: 1.15rem; margin-top: 1.6rem; }
+
+header.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.brand { font-weight: 700; text-decoration: none; color: inherit; }
+
+label { display: block; margin: 0.55rem 0; }
+
+input[type="text"],
+input:not([type]),
+textarea,
+input[type="file"] {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0.45rem;
+}
+
+textarea { min-height: 6rem; }
+
+button {
+  font: inherit;
+  padding: 0.45rem 0.8rem;
+  margin-top: 0.35rem;
+}
+
+form.inline { display: inline; }
+
+form.inline button { margin-left: 0.4rem; }
+
+.note {
+  background: #fef3c7;
+  padding: 0.7rem 0.8rem;
+}
+
+.muted { color: #57534e; }
+
+.description, .post-body { white-space: pre-wrap; }
+
+.post { border-top: 1px solid #e7e5e4; padding: 0.85rem 0; }
+
+.post img { max-width: 100%; height: auto; }
+
+fieldset { margin: 0.8rem 0; }
